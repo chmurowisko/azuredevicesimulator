@@ -1,0 +1,38 @@
+{
+  "name": "devicesimulator",
+  "version": "1.0.0",
+  "description": "Device simulation app",
+  "main": "index.js",
+  "scripts": {
+    "test": "test",
+    "build": "tsc",
+    "build-live": "tsc -w",
+    "serve": "node ./dist/index.js",
+    "start": "npm run build && npm run serve"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "keywords": [
+    "azure",
+    "iothub"
+  ],
+  "author": "Damian Mazurek",
+  "license": "MIT",
+  "bugs": {
+    "url": ""
+  },
+  "homepage": "",
+  "dependencies": {
+    "@types/mqtt": "0.0.34",
+    "azure-iot-device": "^1.1.16",
+    "azure-iot-device-amqp": "^1.1.16",
+    "azure-iot-device-mqtt": "^1.1.16",
+    "rxjs": "^5.4.2"
+  },
+  "devDependencies": {
+    "@types/node": "^8.0.16",
+    "typescript": "^2.4.2"
+  }
+}
